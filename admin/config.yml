@@ -32,7 +32,7 @@ collections:
       - {label: "职位", name: "position", widget: "string"}
       - {label: "开始时间", name: "startDate", widget: "datetime", format: "YYYY.MM"}
       - {label: "结束时间", name: "endDate", widget: "datetime", format: "YYYY.MM", default: "至今"}
-      - {label: "职责描述", name: "description", widget: "list", field: {widget: "string"}}
+      - {label: "职责描述", name: "description", widget: "list", field: {name: "item", widget: "string"}}
 
   - name: "education"
     label: "教育背景"
@@ -55,7 +55,7 @@ collections:
       - {label: "职位", name: "position", widget: "string"}
       - {label: "开始时间", name: "startDate", widget: "datetime", format: "YYYY.MM"}
       - {label: "结束时间", name: "endDate", widget: "datetime", format: "YYYY.MM", default: "至今"}
-      - {label: "项目描述", name: "description", widget: "list", field: {widget: "string"}}
+      - {label: "项目描述", name: "description", widget: "list", field: {name: "item", widget: "string"}}
 
   - name: "skills"
     label: "技能"
@@ -64,4 +64,4 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "技能分类", name: "category", widget: "string"}
-      - {label: "技能列表", name: "items", widget: "list", field: {widget: "string"}}
+      - {label: "技能列表", name: "items", widget: "list", field: {name: "skill", widget: "string"}}
