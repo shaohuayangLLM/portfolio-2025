@@ -2,6 +2,7 @@ backend:
   name: github
   repo: shaohuayangLLM/portfolio-2025
   branch: main
+  open_authoring: true
 
 media_folder: "images"
 public_folder: "/images"
