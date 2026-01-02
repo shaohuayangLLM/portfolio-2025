@@ -1,0 +1,67 @@
+backend:
+  name: github
+  repo: shaohuayangLLM/portfolio-2025
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "网站设置"
+    files:
+      - name: "about"
+        label: "关于我"
+        file: "content/about.md"
+        fields:
+          - {label: "姓名", name: "name", widget: "string"}
+          - {label: "职位", name: "title", widget: "string"}
+          - {label: "简介", name: "description", widget: "text"}
+          - {label: "邮箱", name: "email", widget: "string"}
+          - {label: "电话", name: "phone", widget: "string"}
+          - {label: "GitHub", name: "github", widget: "string"}
+          - {label: "所在地", name: "location", widget: "string"}
+
+  - name: "experience"
+    label: "工作经历"
+    folder: "content/experience"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "公司名称", name: "company", widget: "string"}
+      - {label: "职位", name: "position", widget: "string"}
+      - {label: "开始时间", name: "startDate", widget: "datetime", format: "YYYY.MM"}
+      - {label: "结束时间", name: "endDate", widget: "datetime", format: "YYYY.MM", default: "至今"}
+      - {label: "职责描述", name: "description", widget: "list", field: {widget: "string"}}
+
+  - name: "education"
+    label: "教育背景"
+    folder: "content/education"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "学校名称", name: "school", widget: "string"}
+      - {label: "学位/专业", name: "degree", widget: "string"}
+      - {label: "开始时间", name: "startDate", widget: "datetime", format: "YYYY.MM"}
+      - {label: "结束时间", name: "endDate", widget: "datetime", format: "YYYY.MM"}
+
+  - name: "projects"
+    label: "项目经历"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "项目名称", name: "name", widget: "string"}
+      - {label: "职位", name: "position", widget: "string"}
+      - {label: "开始时间", name: "startDate", widget: "datetime", format: "YYYY.MM"}
+      - {label: "结束时间", name: "endDate", widget: "datetime", format: "YYYY.MM", default: "至今"}
+      - {label: "项目描述", name: "description", widget: "list", field: {widget: "string"}}
+
+  - name: "skills"
+    label: "技能"
+    folder: "content/skills"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "技能分类", name: "category", widget: "string"}
+      - {label: "技能列表", name: "items", widget: "list", field: {widget: "string"}}
