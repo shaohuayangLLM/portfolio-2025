@@ -1,5 +1,5 @@
 ---
-name: 一体化数据基础平台-云管平台cv
+name: 一体化数据基础平台-云管平台
 position: 产品经理
 startDate: 2021-11
 endDate: 2023-12
