@@ -3,7 +3,7 @@ name: 杨绍华
 title: 产品经理 | 大模型 & 云计算专家 | 11年产品管理经验
 description:
   - 拥有11年产品与研发团队管理经验，科大讯飞产品经理，专注于大模型训练与推理平台、云计算产品规划。成功规划星火智算平台等核心产品，熟悉大模型预训练、微调、强化学习及推理部署全流程。
-email: ysh20071824ysh@163.com
+email: ysh20071824ysh@gmail.com
 phone: '13865943361'
 github: https://github.com/shaohuayangLLM
 location: 安徽合肥
