@@ -1,6 +1,5 @@
 ---
-filename: guangxing
-company: 安徽广行物联科技有限公司test
+company: 安徽广行物联科技有限公司te
 position: 产品经理
 startDate: 2014-07
 endDate: 2017-07
